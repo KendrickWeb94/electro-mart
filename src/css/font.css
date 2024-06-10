@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/static/Inter-Light.ttf") format("ttf"),
+    url("../assets/fonts/Inter/static/Inter-Medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Plus";
+  src: url("../assets/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf")
+      format("ttf"),
+    url("../assets/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf")
+      format("ttf");
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.plus {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
