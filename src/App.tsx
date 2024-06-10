@@ -9,7 +9,7 @@ interface AppProps {
 function App({ children }: AppProps) {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className=" w-full relative">
+      <div className=" w-full relative dark:bg-slate-950">
         <div className="">
           <ModeToggle />
         </div>
