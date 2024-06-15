@@ -1,13 +1,12 @@
 
-import { ModeToggle } from "./components/themes/modetoggle";
+import { Homepage } from "./pages/Home/layouts/Homepage";
 
 function App() {
   return (
    
-      <div className=" w-full relative dark:bg-zinc-950 bg-slate-100">
-        <div className="">
-          <ModeToggle />
-        </div>
+      <div className=" w-full min-h-screen relative dark:bg-zinc-950 bg-slate-100">
+        
+          <Homepage />
       </div>
 
   );
