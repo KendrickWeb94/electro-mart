@@ -17,7 +17,20 @@ module.exports = {
       },
     },
     extend: {
+      screens: {
+        "2xl": "1400px",
+        "ds": "320px",
+        "xxs" :"350px",
+        "xs": "480px",
+        "bs": "520px",
+        "md": "850px",
+        "lg" : "1080px",
+        "sm": "650px",
+      },
+
       colors: {
+        "dark": "#101010",
+        "d-green": "#0eb582",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

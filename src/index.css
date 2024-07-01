@@ -1,21 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
-@font-face {
-  font-family: "Inter";
-  src: url("./assets/fonts/Inter/static/Inter-Medium.ttf") format("ttf"),
-    url("./assets/fonts/Inter/static/Inter-Medium.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: "Plus";
-  src: url("./assets/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf")
-      format("ttf"),
-    url("./assets/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf")
-      format("ttf");
+.z-sm{
+  z-index: -1;
 }
 
 .inter {

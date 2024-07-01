@@ -4,8 +4,7 @@ import { Homepage } from "./pages/Home/layouts/Homepage";
 function App() {
   return (
    
-      <div className=" w-full min-h-screen relative dark:bg-zinc-950 bg-slate-100">
-        
+      <div className=" w-full min-h-screen relative dark:bg-dark bg-slate-50">
           <Homepage />
       </div>
 
