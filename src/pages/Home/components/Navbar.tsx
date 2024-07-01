@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import axios from 'axios';
+import { useState  } from "react";
+
 import { Link } from "react-router-dom";
 import { Lightbulb, MenuIcon, User, X } from "lucide-react";
 import { ModeToggle } from "@/components/themes/modetoggle";
@@ -9,17 +9,9 @@ const Navbar = () => {
     const [activeLink, setActiveLink] = useState("home");
     const [navactive, setactive] = useState(false);
     const [toggleicon, settoggleicon] = useState(true);
-    const [user, setUser] = useState<any>(null); // State to hold user data
 
-    useEffect(() => {
-        axios.get('http://localhost:3001/students')
-            .then(response => {
-                setUser(response.data); // Update user state with fetched data
-            })
-            .catch(error => {
-                console.error('Error fetching user data:', error);
-            });
-    }, []);
+
+  
 
     function handleLinkClick(link: string) {
         setActiveLink(link);
@@ -94,22 +86,13 @@ const Navbar = () => {
                                 Courses
                             </li>
                         </Link>
-                        {/* Display user's name if user data is available */}
-                        {user && (
-                            <Link to="/pages/Account">
-                                <li className="flex items-center">
-                                    <span className="ml-2">{user.name}</span>
-                                </li>
-                            </Link>
-                        )}
-                        {/* If user data is not available, display the Login link */}
-                        {!user && (
+                     
                             <Link to="/pages/Login">
                                 <li>
                                     <User stroke="#0eb582" />
                                 </li>
                             </Link>
-                        )}
+                       
                         <ModeToggle />
                     </div>
                     <div className="md:hidden ds:block">
