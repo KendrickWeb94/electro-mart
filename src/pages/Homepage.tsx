@@ -1,5 +1,6 @@
 import Hero from "./Home/components/Hero"
 import Navbar from "./Home/components/Navbar"
+import PopularSubjects from "./Home/components/PopularSubjects"
 
 
 export const Homepage = () => {
@@ -8,6 +9,8 @@ export const Homepage = () => {
       <Navbar />
       <br></br>
       <Hero />
+      <br></br>
+      <PopularSubjects />
     </div>
   )
 }

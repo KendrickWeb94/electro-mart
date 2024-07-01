@@ -20,6 +20,12 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.grid-auto {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

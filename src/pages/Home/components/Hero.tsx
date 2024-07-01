@@ -3,7 +3,7 @@ import student1 from "../../../assets/imgs/student1.jpg";
 
 const Hero = () => {
   return (
-    <div className=" w-full h-auto mx-auto  pt-10 ">
+    <div className=" w-full inter h-auto mx-auto  pt-10 ">
       <div className="w-full min-h-[80vh] relative overflow-hidden">
         <img
           src={student1}
