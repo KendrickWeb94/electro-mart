@@ -26,6 +26,7 @@ module.exports = {
         "md": "850px",
         "lg" : "1080px",
         "sm": "650px",
+        "xmd": "760px"
       },
 
       colors: {
@@ -85,13 +86,6 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
-    screens: {
-      ds:"320px",
-      xxs:"350px",
-      xs: "480px",
-      bs: "520px",
-      xmd: "760px"
-    }
   },
   plugins: [require("tailwindcss-animate")],
 }
