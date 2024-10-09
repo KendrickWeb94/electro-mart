@@ -12,9 +12,6 @@ module.exports = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
     },
     extend: {
       screens: {
@@ -25,14 +22,14 @@ module.exports = {
         "bs": "520px",
         "md": "850px",
         "lg" : "1080px",
-        "sm": "650px",
+        "sm": "650px", 
         "xmd": "760px"
       },
 
       colors: {
         "dark": "#101010",
-        "d-green": "#0eb582",
-        "green-light": "#f0fdfa",
+        "d-green": "#800eb5",
+        "green-light": "#e9dfed",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

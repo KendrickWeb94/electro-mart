@@ -1,6 +1,6 @@
-import Hero from "./Home/components/Hero"
-import Navbar from "./Home/components/Navbar"
-import PopularSubjects from "./Home/components/PopularSubjects"
+import Hero from "../components/ui/Hero"
+import Navbar from "../components/ui/Navbar"
+import PopularSubjects from "../components/ui/PopularSubjects"
 
 
 export const Homepage = () => {

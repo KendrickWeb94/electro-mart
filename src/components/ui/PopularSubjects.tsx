@@ -1,15 +1,15 @@
-import graphic from "../../../assets/imgs/graphic-design.svg"
-import maths from "../../../assets/imgs/calculator.svg"
-import engine from "../../../assets/imgs/engineering.svg"
-import science from "../../../assets/imgs/science.svg"
-import web from "../../../assets/imgs/web.svg"
-import teaching from "../../../assets/imgs/teaching.svg"
+import graphic from "../../assets/imgs/graphic-design.svg"
+import maths from "../../assets/imgs/calculator.svg"
+import engine from "../../assets/imgs/engineering.svg"
+import science from "../../assets/imgs/science.svg"
+import web from "../../assets/imgs/web.svg"
+import teaching from "../../assets/imgs/teaching.svg"
 
 const PopularSubjects = () => {
   return (
     <div className=" w-full h-auto py-6 mx-auto max-w-[95%]">
       <div className="w-full space-y-7">
-        <h1 className=" text-3xl font-semibold text-dark text-center inter">
+        <h1 className=" text-4xl text-d-green font-semibold  text-center inter">
           Our Popular Subjects
         </h1>
         <div className="grid-auto">

@@ -1,8 +1,7 @@
 import { useState  } from "react";
 
 import { Link } from "react-router-dom";
-import { Lightbulb, MenuIcon, User, X } from "lucide-react";
-import { ModeToggle } from "@/components/themes/modetoggle";
+import { LightbulbIcon, MenuIcon,  UserRound, X } from "lucide-react";
 import ResponsiveNavbar from "./ResponsiveNavbar";
 
 const Navbar = () => {
@@ -25,19 +24,19 @@ const Navbar = () => {
     return (
         <>
             {navactive && <ResponsiveNavbar />}
-            <div className="w-full mx-auto bg-slate-50 dark:bg-dark top-0 fixed z-30 p-2">
+            <div className="w-full mx-auto bg-slate-50 py-6 shadow-2xl dark:bg-dark top-0 fixed z-30 p-2">
                 <div className="w-full mx-auto max-w-[95%] flex items-center justify-between">
                     <Link to="/">
-                        <div className="logo flex items-center gap-2 text-d-green">
+                        <div className="logo flex items-center gap-6 text-d-green">
                             <h3 className="flex text-2xl text-d-green inter font-semibold plus">
-                                Kendrick IT Uni
+                                    Innovate
                                 <span className="">
-                                    <Lightbulb size="25px" stroke="#0eb582" />
+                                  <LightbulbIcon />
                                 </span>
                             </h3>
                         </div>
                     </Link>
-                    <div className="nav-links md:flex ds:hidden list-none flex items-center gap-6 text-gray-600 dark:text-gray-300">
+                    <div className="nav-links md:flex ds:hidden list-none flex items-center gap-8 text-gray-600 dark:text-gray-300">
                         <Link to="/">
                             <li
                                 className={`relative dark:text-gray-300 list-none dark:hover:text-d-green hover:text-d-green smooth cursor-pointer ${
@@ -50,7 +49,7 @@ const Navbar = () => {
                                 Home
                             </li>
                         </Link>
-                        <Link to="pages/About">
+                        <Link to="/About">
                             <li
                                 className={`relative  list-none dark:hover:text-d-green hover:text-yd-greensmooth cursor-pointer ${
                                     activeLink === "about"
@@ -59,10 +58,10 @@ const Navbar = () => {
                                 }`}
                                 onClick={() => handleLinkClick("about")}
                             >
-                                About
+                                More about us
                             </li>
                         </Link>
-                        <Link to="/pages/Contact">
+                        <Link to="/Contact">
                             <li
                                 className={`relative  list-none dark:hover:text-d-green hover:text-d-green smooth cursor-pointer ${
                                     activeLink === "contact"
@@ -71,10 +70,10 @@ const Navbar = () => {
                                 }`}
                                 onClick={() => handleLinkClick("contact")}
                             >
-                                Contact
+                                How to contact us 
                             </li>
                         </Link>
-                        <Link to="/pages/Courses">
+                        <Link to="/Courses">
                             <li
                                 className={`relative  list-none dark:hover:text-d-green hover:text-d-green smooth cursor-pointer ${
                                     activeLink === "courses"
@@ -83,17 +82,17 @@ const Navbar = () => {
                                 }`}
                                 onClick={() => handleLinkClick("courses")}
                             >
-                                Courses
+                              The courses we offer
                             </li>
                         </Link>
                      
-                            <Link to="/pages/Login">
+                            <Link to="/Login">
                                 <li>
-                                    <User stroke="#0eb582" />
+                                <UserRound size={18}/>
                                 </li>
                             </Link>
                        
-                        <ModeToggle />
+                  
                     </div>
                     <div className="md:hidden ds:block">
                         <div
